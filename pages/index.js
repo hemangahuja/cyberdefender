@@ -8,6 +8,7 @@ export default function Form() {
     e.preventDefault();
     try {
       await addToFirestore(formData);
+      alert("Thank You For Registering!");
     } catch (error) {
       console.log(error);
     }
